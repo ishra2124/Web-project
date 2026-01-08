@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - FreelanceHub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <a href="index.html" class="navbar-logo">
+          <img src="logo.png" alt="SkillBridge Logo" />
+          <span
+            style="font-family: calibri; font-size: 25px; font-weight: bold"
+          >
+            <span style="color: greenyellow">Skill</span
+            ><span style="color: blue">Bridge</span>
+          </span>
+        </a>
+        <div class="navbar-links">
+          <a href="browse-freelancers.html" class="navbar-link"
+            >Browse Freelancers</a
+          >
+          <a href="login.html" class="navbar-link">Login</a>
+          <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="auth-container">
+      <div class="auth-card">
+        <div class="auth-title">
+          <h1>Login</h1>
+          <p style="color: var(--gray-600)">Welcome back to FreelanceHub</p>
+        </div>
+
+        <form action="#" method="post">
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-input"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-input"
+              name="password"
+              placeholder="••••••••"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Login as:</label>
+            <select class="form-select" name="role" required>
+              <option value="">Select role...</option>
+              <option value="admin">Admin</option>
+              <option value="freelancer">Freelancer</option>
+              <option value="client">Client</option>
+            </select>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="width: 100%; margin-bottom: 1rem"
+          >
+            Login
+          </button>
+
+          <p style="text-align: center; color: var(--gray-600)">
+            Don't have an account?
+            <a href="signup.html" style="color: var(--blue-600)">Sign up</a>
+          </p>
+        </form>
+
+        <div class="alert alert-info" style="margin-top: 1.5rem">
+          <strong>Demo Login:</strong><br />
+          Use any email/password and select a role to login.
+        </div>
+
+        <div style="text-align: center; margin-top: 1rem">
+          <a
+            href="index.html"
+            style="color: var(--gray-600); font-size: 0.875rem"
+            >← Back to Home</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

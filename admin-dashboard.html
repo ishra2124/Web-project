@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - FreelanceHub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <a href="index.html" class="navbar-logo">
+          <img src="logo.png" alt="SkillBridge Logo" />
+          <span
+            style="font-family: calibri; font-size: 25px; font-weight: bold"
+          >
+            <span style="color: greenyellow">Skill</span
+            ><span style="color: blue">Bridge</span>
+          </span>
+        </a>
+        <div class="navbar-links">
+          <a href="admin-dashboard.html" class="navbar-link">Dashboard</a>
+          <a href="login.html" class="navbar-link">Approvals</a>
+          <a href="login.html" class="navbar-link">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <div class="container">
+        <div class="dashboard-header">
+          <h1>Admin Dashboard</h1>
+          <p style="color: var(--gray-600)">Welcome back, Administrator</p>
+        </div>
+
+        <div class="dashboard-stats">
+          <div class="stat-card">
+            <div class="stat-value">1,247</div>
+            <div class="stat-label">Total Users</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">2</div>
+            <div class="stat-label">Pending Approvals</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">156</div>
+            <div class="stat-label">Active Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">$125,430</div>
+            <div class="stat-label">Total Revenue</div>
+          </div>
+        </div>
+
+        <div class="grid grid-2" style="margin-top: 2rem">
+          <div class="card">
+            <h3 style="margin-bottom: 1rem">Recent Activity</h3>
+            <div style="display: flex; flex-direction: column; gap: 1rem">
+              <div>
+                <p style="margin: 0; font-weight: 500">
+                  New freelancer: David Kim
+                </p>
+                <p
+                  style="margin: 0; color: var(--gray-600); font-size: 0.875rem"
+                >
+                  2 hours ago
+                </p>
+              </div>
+              <div>
+                <p style="margin: 0; font-weight: 500">
+                  Project completed: E-commerce Platform
+                </p>
+                <p
+                  style="margin: 0; color: var(--gray-600); font-size: 0.875rem"
+                >
+                  5 hours ago
+                </p>
+              </div>
+              <div>
+                <p style="margin: 0; font-weight: 500">
+                  New client: TechStart Inc
+                </p>
+                <p
+                  style="margin: 0; color: var(--gray-600); font-size: 0.875rem"
+                >
+                  1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-bottom: 1rem">Quick Actions</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem">
+              <a href="login.html" class="btn btn-primary"
+                >Review Pending Approvals</a
+              >
+              <a href="login.html" class="btn btn-secondary">View All Users</a>
+              <a href="login.html" class="btn btn-secondary">System Settings</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <h2 class="logo">SkillsBridge</h2>
+          <p class="tagline">Where employment bridges skills</p>
+
+          <h4>Address:</h4>
+          <p>
+            442 lorem ipsum, lorem<br />
+            Dhaka, Bangladesh
+          </p>
+
+          <h4>Contact:</h4>
+          <p>
+            +880-1710999999<br />
+            +880-1910999999<br />
+            support@skillbridge.com
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4>Services:</h4>
+          <ul>
+            <li>Post a Job</li>
+            <li>Browse Jobs</li>
+          </ul>
+
+          <h4>Find a:</h4>
+          <ul>
+            <li>Web Designer</li>
+            <li>Photoshop designer</li>
+            <li>Illustrator designer</li>
+            <li>Visualizer</li>
+            <li>SEO expert</li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4>Find a job for skills:</h4>
+          <ul>
+            <li>Web development</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>After effects</li>
+            <li>SEO</li>
+            <li>Digital Marketing</li>
+            <li>Social Media Management</li>
+            <li>C++ developer</li>
+            <li>PHP developer</li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-col">
+          <h4>Legal:</h4>
+          <ul>
+            <li>Contact</li>
+            <li>Privacy Policy</li>
+            <li>Terms and conditions</li>
+          </ul>
+
+          <div class="social-icons">
+            <div class="icon">f</div>
+            <div class="icon">📷</div>
+            <div class="icon">✉</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025, SkillBridge, Inc</div>
+    </footer>
+  </body>
+</html>

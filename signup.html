@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - FreelanceHub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Pure CSS solution - show fields when freelancer radio is checked */
+      .role-selector {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .role-option {
+        display: none;
+      }
+
+      .role-option + label {
+        display: block;
+        padding: 0.625rem 0.75rem;
+        border: 1px solid var(--gray-300);
+        border-radius: 0.375rem;
+        cursor: pointer;
+        background-color: var(--white);
+        transition: all 0.2s;
+      }
+
+      .role-option + label:hover {
+        background-color: var(--gray-50);
+      }
+
+      .role-option:checked + label {
+        border-color: var(--blue-600);
+        background-color: var(--blue-50);
+        color: var(--blue-700);
+      }
+
+      #freelancerFields {
+        display: none;
+      }
+
+      /* Show fields when freelancer radio is checked */
+      #roleFreelancer:checked ~ #freelancerFields {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <a href="index.html" class="navbar-logo">
+          <img src="logo.png" alt="SkillBridge Logo" />
+          <span
+            style="font-family: calibri; font-size: 25px; font-weight: bold"
+          >
+            <span style="color: greenyellow">Skill</span
+            ><span style="color: blue">Bridge</span>
+          </span>
+        </a>
+        <div class="navbar-links">
+          <a href="browse-freelancers.html" class="navbar-link"
+            >Browse Freelancers</a
+          >
+          <a href="login.html" class="navbar-link">Login</a>
+          <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Signup Form -->
+    <div class="auth-container">
+      <div class="auth-card">
+        <div class="auth-title">
+          <h1>Sign Up</h1>
+          <p style="color: var(--gray-600)">Create your FreelanceHub account</p>
+        </div>
+
+        <form action="#" method="post" id="signupForm">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input
+              type="text"
+              class="form-input"
+              name="name"
+              id="signupName"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-input"
+              name="email"
+              id="signupEmail"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-input"
+              name="password"
+              id="signupPassword"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Confirm Password</label>
+            <input
+              type="password"
+              class="form-input"
+              name="confirmPassword"
+              id="signupConfirmPassword"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">I want to:</label>
+            <div class="role-selector">
+              <input
+                type="radio"
+                name="role"
+                id="roleFreelancer"
+                value="freelancer"
+                class="role-option"
+                required
+              />
+              <label for="roleFreelancer">Work as a Freelancer</label>
+
+              <input
+                type="radio"
+                name="role"
+                id="roleClient"
+                value="client"
+                class="role-option"
+                required
+              />
+              <label for="roleClient">Hire Freelancers</label>
+
+              <div id="freelancerFields">
+                <div class="form-group" style="margin-top: 1rem">
+                  <label class="form-label"
+                    >Portfolio URL
+                    <span style="color: var(--red-600)">*</span></label
+                  >
+                  <input
+                    type="url"
+                    class="form-input"
+                    name="portfolio"
+                    id="signupPortfolio"
+                    placeholder="https://your-portfolio.com"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label"
+                    >GitHub Profile URL
+                    <span style="color: var(--red-600)">*</span></label
+                  >
+                  <input
+                    type="url"
+                    class="form-input"
+                    name="github"
+                    id="signupGithub"
+                    placeholder="https://github.com/username"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="width: 100%; margin-bottom: 1rem"
+          >
+            Create Account
+          </button>
+
+          <p style="text-align: center; color: var(--gray-600)">
+            Already have an account?
+            <a href="login.html" style="color: var(--blue-600)">Login</a>
+          </p>
+        </form>
+
+        <div class="alert alert-info" style="margin-top: 1.5rem">
+          <strong>Note:</strong> Freelancer accounts require admin approval
+          before you can start bidding on jobs. Please provide your Portfolio
+          and GitHub Profile URLs when signing up as a freelancer.
+        </div>
+
+        <div style="text-align: center; margin-top: 1rem">
+          <a
+            href="index.html"
+            style="color: var(--gray-600); font-size: 0.875rem"
+            >← Back to Home</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

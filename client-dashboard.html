@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Dashboard - FreelanceHub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <a href="index.html" class="navbar-logo">
+          <img src="logo.png" alt="SkillBridge Logo" />
+          <span
+            style="font-family: calibri; font-size: 25px; font-weight: bold"
+          >
+            <span style="color: greenyellow">Skill</span
+            ><span style="color: blue">Bridge</span>
+          </span>
+        </a>
+        <div class="navbar-links">
+          <a href="client-dashboard.html" class="navbar-link">Dashboard</a>
+          <a href="browse-freelancers.html" class="btn btn-primary btn-sm"
+            >Post Project</a
+          >
+          <a href="browse-freelancers.html" class="navbar-link"
+            >Find Freelancers</a
+          >
+          <a href="login.html" class="navbar-link">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <div class="container">
+        <div class="dashboard-header">
+          <h1>Client Dashboard</h1>
+          <p style="color: var(--gray-600)">Welcome back, Jane Client</p>
+        </div>
+
+        <div class="dashboard-stats">
+          <div class="stat-card">
+            <div class="stat-value">2</div>
+            <div class="stat-label">Active Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">8</div>
+            <div class="stat-label">Completed Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">$15,500</div>
+            <div class="stat-label">Total Spent</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">1</div>
+            <div class="stat-label">Pending Review</div>
+          </div>
+        </div>
+
+        <div class="dashboard-header" style="margin-top: 2rem">
+          <h2>Active Projects</h2>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                margin-bottom: 1rem;
+              "
+            >
+              <div>
+                <h3 style="margin-bottom: 0.25rem">E-commerce Platform</h3>
+                <p style="color: var(--gray-600); margin: 0">
+                  Freelancer: Sarah Johnson
+                </p>
+              </div>
+              <span class="badge badge-info">in-progress</span>
+            </div>
+
+            <div style="margin-bottom: 1rem">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                <span style="font-size: 0.875rem; color: var(--gray-600)"
+                  >Progress</span
+                >
+                <span style="font-size: 0.875rem; font-weight: 600">65%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 65%"></div>
+              </div>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div>
+                <span style="font-weight: 600; color: var(--gray-900)"
+                  >$5,000</span
+                >
+                <span
+                  style="
+                    color: var(--gray-600);
+                    font-size: 0.875rem;
+                    margin-left: 0.5rem;
+                  "
+                  >Due: 2025-03-01</span
+                >
+              </div>
+              <a href="login.html" class="btn btn-secondary btn-sm">Chat</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                margin-bottom: 1rem;
+              "
+            >
+              <div>
+                <h3 style="margin-bottom: 0.25rem">Blog Content</h3>
+                <p style="color: var(--gray-600); margin: 0">
+                  Freelancer: Emily Rodriguez
+                </p>
+              </div>
+              <span class="badge badge-warning">delivered</span>
+            </div>
+
+            <div style="margin-bottom: 1rem">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                <span style="font-size: 0.875rem; color: var(--gray-600)"
+                  >Progress</span
+                >
+                <span style="font-size: 0.875rem; font-weight: 600">100%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div>
+                <span style="font-weight: 600; color: var(--gray-900)"
+                  >$1,000</span
+                >
+                <span
+                  style="
+                    color: var(--gray-600);
+                    font-size: 0.875rem;
+                    margin-left: 0.5rem;
+                  "
+                  >Due: 2025-01-20</span
+                >
+              </div>
+              <a href="login.html" class="btn btn-success btn-sm"
+                >Review Work</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <h2 class="logo">SkillsBridge</h2>
+          <p class="tagline">Where employment bridges skills</p>
+
+          <h4>Address:</h4>
+          <p>
+            442 lorem ipsum, lorem<br />
+            Dhaka, Bangladesh
+          </p>
+
+          <h4>Contact:</h4>
+          <p>
+            +880-1710999999<br />
+            +880-1910999999<br />
+            support@skillbridge.com
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4>Services:</h4>
+          <ul>
+            <li>Post a Job</li>
+            <li>Browse Jobs</li>
+          </ul>
+
+          <h4>Find a:</h4>
+          <ul>
+            <li>Web Designer</li>
+            <li>Photoshop designer</li>
+            <li>Illustrator designer</li>
+            <li>Visualizer</li>
+            <li>SEO expert</li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4>Find a job for skills:</h4>
+          <ul>
+            <li>Web development</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>After effects</li>
+            <li>SEO</li>
+            <li>Digital Marketing</li>
+            <li>Social Media Management</li>
+            <li>C++ developer</li>
+            <li>PHP developer</li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-col">
+          <h4>Legal:</h4>
+          <ul>
+            <li>Contact</li>
+            <li>Privacy Policy</li>
+            <li>Terms and conditions</li>
+          </ul>
+
+          <div class="social-icons">
+            <div class="icon">f</div>
+            <div class="icon">📷</div>
+            <div class="icon">✉</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025, SkillBridge, Inc</div>
+    </footer>
+  </body>
+</html>

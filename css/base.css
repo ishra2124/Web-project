@@ -1,0 +1,310 @@
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ===== BASE COLORS (Existing Palette) ===== */
+    /* Primary Brand Green */
+    --blue-50: #f0f9e8;
+    --blue-100: #dff2d1;
+    --blue-200: #c6e6a0;
+    --blue-600: #9CC746;
+    --blue-700: #8ab83d;
+    --blue-800: #7aa333;
+    
+    /* Gray Scale */
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+    
+    /* Base Colors */
+    --white: #ffffff;
+    --green-600: #16a34a;
+    --green-700: #15803d;
+    --yellow-500: #eab308;
+    --yellow-600: #d97706;
+    --red-600: #dc2626;
+    --red-700: #b91c1c;
+    --orange-600: #ea580c;
+    --teal-600: #0d9488;
+
+    /* ===== SEMANTIC COLOR MAPPINGS ===== */
+    /* Primary - Brand Green */
+    --color-primary: var(--blue-600);
+    --color-primary-hover: var(--blue-700);
+    --color-primary-dark: var(--blue-800);
+    --color-primary-light: var(--blue-100);
+    --color-primary-bg: var(--blue-50);
+    
+    /* Secondary - Accent Blue (for brand text) */
+    --color-secondary: #319dd6;
+    --color-brand-skill: #adff2f;
+    --color-brand-bridge: #0066cc;
+    
+    /* Accent Colors */
+    --color-accent: var(--blue-600);
+    --color-accent-hover: var(--blue-700);
+    
+    /* Background Colors */
+    --color-bg-primary: var(--white);
+    --color-bg-secondary: var(--gray-50);
+    --color-bg-tertiary: var(--gray-100);
+    --color-bg-card: var(--white);
+    --color-bg-input: var(--white);
+    
+    /* Text Colors */
+    --color-text-primary: var(--gray-900);
+    --color-text-secondary: var(--gray-600);
+    --color-text-tertiary: var(--gray-500);
+    --color-text-inverse: var(--white);
+    
+    /* Border Colors */
+    --color-border: var(--gray-200);
+    --color-border-light: var(--gray-100);
+    --color-border-dark: var(--gray-300);
+    --color-border-focus: var(--blue-600);
+
+    /* ===== STATUS COLORS ===== */
+    /* Success */
+    --color-success: var(--green-600);
+    --color-success-hover: var(--green-700);
+    --color-success-bg: #d1fae5;
+    --color-success-text: #065f46;
+    --color-success-border: #6ee7b7;
+    
+    /* Warning */
+    --color-warning: var(--yellow-500);
+    --color-warning-hover: var(--yellow-600);
+    --color-warning-bg: #fef3c7;
+    --color-warning-text: #92400e;
+    --color-warning-border: #fcd34d;
+    
+    /* Danger */
+    --color-danger: var(--red-600);
+    --color-danger-hover: var(--red-700);
+    --color-danger-bg: #fee2e2;
+    --color-danger-text: #991b1b;
+    --color-danger-border: #fca5a5;
+    
+    /* Info */
+    --color-info: #3b82f6;
+    --color-info-bg: #dbeafe;
+    --color-info-text: #1e40af;
+    --color-info-border: #93c5fd;
+
+    /* ===== STATUS BADGES ===== */
+    --badge-pending-bg: var(--color-warning-bg);
+    --badge-pending-text: var(--color-warning-text);
+    --badge-approved-bg: var(--color-success-bg);
+    --badge-approved-text: var(--color-success-text);
+    --badge-rejected-bg: var(--color-danger-bg);
+    --badge-rejected-text: var(--color-danger-text);
+
+    /* ===== FOOTER COLORS ===== */
+    --footer-bg-gradient-start: #cfe6a6;
+    --footer-bg-gradient-end: var(--white);
+    --footer-border: #9ccc4a;
+    --footer-heading: #6da82c;
+    --footer-social-bg: #7fbf2f;
+    --footer-social-hover: #6da82c;
+    --footer-bottom-bg: #7fbf2f;
+
+    /* ===== STAT CARD GRADIENTS ===== */
+    --stat-primary-start: var(--blue-600);
+    --stat-primary-end: var(--blue-700);
+    --stat-rating-start: #f59e0b;
+    --stat-rating-end: #d97706;
+    --stat-success-start: #10b981;
+    --stat-success-end: #059669;
+    --stat-danger-start: #ef4444;
+    --stat-danger-end: #dc2626;
+
+    /* ===== TYPOGRAPHY ===== */
+    --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-family-heading: var(--font-family-base);
+    --font-family-brand: Calibri, var(--font-family-base);
+    
+    /* Font Sizes */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
+    
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* ===== SPACING ===== */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+
+    /* ===== COMPONENT TOKENS ===== */
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.375rem;
+    --border-radius-lg: 0.5rem;
+    --border-radius-xl: 0.75rem;
+    --border-radius-full: 9999px;
+    
+    --button-height-sm: 36px;
+    --button-height-md: 48px;
+    --button-height-lg: 56px;
+    
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-primary: 0 4px 12px rgba(156, 199, 70, 0.3);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--gray-900);
+    background-color: var(--gray-50);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Section Styles - Common */
+.section {
+    padding: 4rem 0;
+}
+
+.section-white {
+    background-color: var(--white);
+}
+
+.section-gray {
+    background-color: var(--gray-100);
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--gray-900);
+    font-weight: 600;
+    position: relative;
+    animation: fadeInDown 0.8s ease;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, var(--blue-600), var(--blue-700));
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: var(--gray-600);
+    text-align: center;
+    animation: fadeInUp 0.8s ease 0.2s backwards;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
